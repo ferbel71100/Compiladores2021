@@ -1,0 +1,55 @@
+#include<stdio.h>
+#include<iostream>
+#include<string.h>
+using namespace std;
+class AFD{
+    private: //atributos
+        int n1;
+        int estados1[n1];
+    public: //metodos        
+        void definirafd1();
+}
+    AFD::AFD(int _n1, int _estados1){
+        n1 = _n1;
+        estados1 = _estados1;
+    }    
+
+    void definirafd1(){
+        int j=_n1*2;
+        int pos1[j];
+        int final[100];
+        int k,r;
+        for(int i=0;i<_n1;i++){
+        int n=0;    
+        _estados1[i]=i+1;
+        cout<<"Define los casos del estado 0 y 1"<<_estados1[i]<<end1;
+        cout<<"Para 0"<<end1;
+        cin>>pos1[n];
+        n++;
+        cout<<"Para 1"<<end1;
+        cin>>pos1[n];
+        n++;
+        cout<<"Si es estado es final ponga 0 en caso contrario otro numero"<<end1;
+        cin>>k;
+        if(k==0){
+          final[r]=_estados1[i];  
+          r++;  
+          }
+        }        
+    }
+
+class AFD{
+    private: //atributos
+        int n2;
+        int estados2[n2];
+    public: //metodos
+        void noestados2;
+        void definirafd2;
+}
+
+int main()
+{
+    int est[]={1,2,3,4,5}
+    AFD afd1 = AFD(5,est);
+    afd1.definirafd1();
+}
